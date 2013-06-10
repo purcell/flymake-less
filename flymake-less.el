@@ -5,7 +5,7 @@
 ;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Version: DEV
 ;; Keywords: languages
-;; Package-Requires: ((less-css-mode "0.12"))
+;; Package-Requires: ((less-css-mode "0.15"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -43,11 +43,15 @@
 (require 'flymake-easy)
 (require 'less-css-mode)
 
-;; TODO: use lessc's "-lint" arg when available
+(defcustom flymake-less-lessc-options
+  '("--lint" "--no-color") ;; Requires Less >= 1.4
+  "Options to pass to lessc.")
+
 
 (defun flymake-less-command (filename)
   "Construct a command that flymake can use to check less syntax at FILENAME."
-  (cons less-css-lessc-command (append less-css-lessc-options (list filename))))
+  (cons less-css-lessc-command
+        (append flymake-less-lessc-options (list filename))))
 
 (defconst flymake-less-err-line-patterns
   (list (list less-css-default-error-regex 2 3 4 1))
