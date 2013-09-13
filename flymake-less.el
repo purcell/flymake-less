@@ -24,7 +24,7 @@
 
 ;; Usage:
 ;;   (require 'flymake-less)
-;;   (add-hook 'less-css--mode-hook 'flymake-less-load)
+;;   (add-hook 'less-css-mode-hook 'flymake-less-load)
 ;;
 ;; Beware that lessc is quite slow, so there can be a significant lag
 ;; between editing and the highlighting of resulting errors.
