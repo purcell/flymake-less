@@ -11,7 +11,7 @@ If you choose not to use one of the convenient packages in
 directory containing `flymake-less.el` to your `load-path`, and then
 `(require 'flymake-less)`. You'll also need to install
 [less-css-mode](https://github.com/purcell/less-css-mode) and
-[flymake-easy](https://github.com/purcell/flymake-less).
+[flymake-easy](https://github.com/purcell/flymake-easy).
 
 Usage
 =====
