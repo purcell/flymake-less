@@ -3,6 +3,9 @@ flymake-less.el
 
 An Emacs flymake handler for syntax-checking LESS CSS code.
 
+Note that you probably want to be using
+[flycheck](http://www.flycheck.org/) instead.
+
 Installation
 =============
 
