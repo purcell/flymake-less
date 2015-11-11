@@ -5,7 +5,7 @@
 ;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Version: DEV
 ;; Keywords: languages
-;; Package-Requires: ((less-css-mode "0.15"))
+;; Package-Requires: ((less-css-mode "0.15") (flymake-easy "0.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -42,6 +42,10 @@
 
 (require 'flymake-easy)
 (require 'less-css-mode)
+
+(defgroup flymake-less nil
+  "Flymake handler for LESS stylesheets."
+  :group 'flymake)
 
 (defcustom flymake-less-lessc-options
   '("--lint" "--no-color") ;; Requires Less >= 1.4
