@@ -3,7 +3,7 @@
 ;; Copyright (C) 2013-2015  Steve Purcell
 
 ;; Author: Steve Purcell <steve@sanityinc.com>
-;; Version: DEV
+;; Package-Version: 0
 ;; Keywords: languages
 ;; Package-Requires: ((less-css-mode "0.15") (flymake-easy "0.1"))
 
