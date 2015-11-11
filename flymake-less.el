@@ -43,6 +43,10 @@
 (require 'flymake-easy)
 (require 'less-css-mode)
 
+(defgroup flymake-less nil
+  "Flymake handler for LESS stylesheets."
+  :group 'flymake)
+
 (defcustom flymake-less-lessc-options
   '("--lint" "--no-color") ;; Requires Less >= 1.4
   "Options to pass to lessc.")
