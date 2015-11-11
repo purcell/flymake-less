@@ -49,7 +49,8 @@
 
 (defcustom flymake-less-lessc-options
   '("--lint" "--no-color") ;; Requires Less >= 1.4
-  "Options to pass to lessc.")
+  "Options to pass to lessc."
+  :group 'flymake-less)
 
 
 (defun flymake-less-command (filename)
