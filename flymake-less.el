@@ -1,6 +1,6 @@
 ;;; flymake-less.el --- Flymake handler for LESS stylesheets (lesscss.org)
 
-;; Copyright (C) 2013  Steve Purcell
+;; Copyright (C) 2013-2015  Steve Purcell
 
 ;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Version: DEV
