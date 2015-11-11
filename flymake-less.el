@@ -5,7 +5,7 @@
 ;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Version: DEV
 ;; Keywords: languages
-;; Package-Requires: ((less-css-mode "0.15"))
+;; Package-Requires: ((less-css-mode "0.15") (flymake-easy "0.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
